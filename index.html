@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCC - Data Collection Coin</title>
+    <meta name="description"
+        content="Empowering the Data Economy through Blockchain-based Transparency and Fair Compensation.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">DCC<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero" data-en="Home" data-ko="홈">Home</a></li>
+                <li><a href="#problem" data-en="About" data-ko="소개">About</a></li>
+                <li><a href="#tech" data-en="Technology" data-ko="기술">Technology</a></li>
+                <li><a href="#tokenomics" data-en="Tokenomics" data-ko="토큰노믹스">Tokenomics</a></li>
+                <li><a href="#documents" data-en="Whitepapers" data-ko="백서">Whitepapers</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button id="btn-ko" class="lang-btn active">KR</button>
+                    <button id="btn-en" class="lang-btn">EN</button>
+                </div>
+                <a href="#documents" class="btn btn-outline" data-en="Listing Docs" data-ko="상장 서류">Listing Docs</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1 class="fade-in" data-en="Powering the Future of <span>Data Economy</span>" data-ko="데이터 경제의 미래를 여는 <span>DCC</span>">Powering the Future of <span>Data Economy</span></h1>
+                <p class="fade-in-delayed" data-en="DCC ensures transparent tracking of data transactions and provides fair rewards through the Polygon network." data-ko="DCC는 폴리곤 네트워크를 통해 데이터 거래의 투명한 추적과 공정한 보상을 보장합니다.">DCC ensures transparent tracking of data transactions and provides fair
+                    rewards through the Polygon network.</p>
+                <div class="hero-btns fade-in-delayed">
+                    <a href="#documents" class="btn btn-primary" data-en="Read Whitepapers" data-ko="백서 읽기">Read Whitepapers</a>
+                    <a href="#tech" class="btn btn-secondary" data-en="Core Tech" data-ko="핵심 기술">Core Tech</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section id="problem" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-en="The Problem" data-ko="기존 시장의 문제점">The Problem</h2>
+                    <p data-en="Current data markets are broken." data-ko="현재의 데이터 시장은 구조적 한계에 부딪혔습니다.">Current data markets are broken.</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="icon">🚫</div>
+                        <h3 data-en="Opaque Compensation" data-ko="불투명한 보상 체계">Opaque Compensation</h3>
+                        <p data-en="Providers receive minimal rewards without knowing how their data is used." data-ko="데이터 제공자는 자신의 데이터가 어떻게 활용되는지 알지 못한 채 최소한의 보상만 받습니다.">Providers receive minimal rewards without knowing how their data is used.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">🏢</div>
+                        <h3 data-en="Centralized Monopoly" data-ko="중앙집중식 독점">Centralized Monopoly</h3>
+                        <p data-en="Large tech platforms dominate data ownership and profit extraction." data-ko="대형 기술 플랫폼이 데이터 소유권과 그로 인한 수익을 독점하고 있습니다.">Large tech platforms dominate data ownership and profit extraction.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon">⚠️</div>
+                        <h3 data-en="Data Integrity" data-ko="데이터 무결성 부족">Data Integrity</h3>
+                        <p data-en="Verifying the authenticity of data is difficult in traditional systems." data-ko="기존 시스템에서는 수집된 데이터의 진위 여부를 검증하기가 매우 어렵습니다.">Verifying the authenticity of data is difficult in traditional systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech" class="section bg-dark">
+            <div class="container">
+                <div class="grid grid-2 items-center">
+                    <div class="tech-content">
+                        <h2 data-en="Advanced Technology" data-ko="혁신적인 기술력">Advanced Technology</h2>
+                        <p data-en="Built on enterprise-grade blockchain standards for scalability and security." data-ko="확장성과 보안을 위해 기업용 블록체인 표준을 기반으로 구축되었습니다.">Built on enterprise-grade blockchain standards for scalability and security.</p>
+                        <ul class="tech-list">
+                            <li data-en="<strong>Polygon POS:</strong> Scalable, low-cost, and fast transactions." data-ko="<strong>Polygon POS:</strong> 확장 가능하고 저렴하며 빠른 트랜잭션 처리."><strong>Polygon POS:</strong> Scalable, low-cost, and fast transactions.</li>
+                            <li data-en="<strong>ERC20 Standard:</strong> Secure asset management via OpenZeppelin." data-ko="<strong>ERC20 Standard:</strong> OpenZeppelin을 통한 안전한 자산 관리."><strong>ERC20 Standard:</strong> Secure asset management via OpenZeppelin.</li>
+                            <li data-en="<strong>BurnAndMintManager:</strong> Automated economic engine for supply control." data-ko="<strong>BurnAndMintManager:</strong> 공급량 조절을 위한 자동화된 경제 엔진."><strong>BurnAndMintManager:</strong> Automated economic engine for supply control.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-visual">
+                        <div class="contract-box">
+                            <div class="box-label">Smart Contract</div>
+                            <pre><code>contract DCC is ERC20 { ... }</code></pre>
+                            <pre><code>contract BurnManager { ... }</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tokenomics" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-en="Sustainable Tokenomics" data-ko="지속 가능한 토큰노믹스">Sustainable Tokenomics</h2>
+                    <p data-en="A balanced ecosystem of scarcity and incentive." data-ko="희소성과 인센티브가 조화를 이루는 생태계입니다.">A balanced ecosystem of scarcity and incentive.</p>
+                </div>
+                <div class="grid grid-2 tokenomics-grid">
+                    <div class="token-card burn">
+                        <h3 data-en="50% Burn Rate" data-ko="50% 소각 비율">50% Burn Rate</h3>
+                        <p data-en="Half of the DCC spent on data purchases is permanently removed from circulation, creating deflationary pressure." data-ko="데이터 구매에 사용된 DCC의 절반이 영구 소각되어 유통량이 줄어들고 가치는 상승합니다.">Half of the DCC spent on data purchases is permanently removed from circulation, creating
+                            deflationary pressure.</p>
+                    </div>
+                    <div class="token-card mint">
+                        <h3 data-en="Reward Minting" data-ko="보상형 발행">Reward Minting</h3>
+                        <p data-en="New tokens are minted specifically to reward high-quality data providers, ensuring continuous ecosystem growth." data-ko="고품질 데이터 제공자에게 보상을 제공하기 위해 신규 토큰이 발행되어 생태계 성장을 촉진합니다.">New tokens are minted specifically to reward high-quality data providers, ensuring continuous
+                            ecosystem growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="documents" class="section bg-dark">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 data-en="Official Documents" data-ko="공식 문서">Official Documents</h2>
+                    <p data-en="Download or view our detailed whitepapers in multiple languages." data-ko="다양한 언어로 작성된 상세 백서를 확인하거나 다운로드하세요.">Download or view our detailed whitepapers in multiple languages.</p>
+                </div>
+                <div class="doc-list">
+                    <!-- Korean Section -->
+                    <div class="doc-group">
+                        <h3 data-en="Korean Documents" data-ko="한국어 문서">Korean Documents</h3>
+                        <div class="doc-item">
+                            <span data-en="Whitepaper (KR)" data-ko="백서 (한국어)">Whitepaper (KR)</span>
+                            <a href="results/260514_백서_KR.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                        <div class="doc-item">
+                            <span data-en="Technical Whitepaper (KR)" data-ko="기술 백서 (한국어)">Technical Whitepaper (KR)</span>
+                            <a href="results/260514_기술백서_KR.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                        <div class="doc-item">
+                            <span data-en="Operational Whitepaper (KR)" data-ko="운영 백서 (한국어)">Operational Whitepaper (KR)</span>
+                            <a href="results/260514_운영백서_KR.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                        <div class="doc-item">
+                            <span data-en="System Whitepaper (KR)" data-ko="시스템 백서 (한국어)">System Whitepaper (KR)</span>
+                            <a href="results/260514_시스템백서_KR.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                    </div>
+
+                    <!-- English Section -->
+                    <div class="doc-group">
+                        <h3 data-en="English Documents" data-ko="영어 문서">English Documents</h3>
+                        <div class="doc-item">
+                            <span data-en="Whitepaper (EN)" data-ko="백서 (영어)">Whitepaper (EN)</span>
+                            <a href="results/260514_백서_EN.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                        <div class="doc-item">
+                            <span data-en="Technical Whitepaper (EN)" data-ko="기술 백서 (영어)">Technical Whitepaper (EN)</span>
+                            <a href="results/260514_기술백서_EN.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                        <div class="doc-item">
+                            <span data-en="Operational Whitepaper (EN)" data-ko="운영 백서 (영어)">Operational Whitepaper (EN)</span>
+                            <a href="results/260514_운영백서_EN.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                        <div class="doc-item">
+                            <span data-en="System Whitepaper (EN)" data-ko="시스템 백서 (영어)">System Whitepaper (EN)</span>
+                            <a href="results/260514_시스템백서_EN.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                    </div>
+
+                    <!-- Other Section -->
+                    <div class="doc-group">
+                        <h3 data-en="Other Languages" data-ko="기타 언어">Other Languages</h3>
+                        <div class="doc-item">
+                            <span data-en="Whitepaper (Indonesian)" data-ko="백서 (인도네시아어)">Whitepaper (Indonesian)</span>
+                            <a href="results/260514_백서_ID.md" class="btn btn-sm btn-primary" data-en="View Document" data-ko="문서 보기">View Document</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <div class="logo">DCC<span>.</span></div>
+            <p data-en="&copy; 2026 DANARI Foundation. All rights reserved." data-ko="&copy; 2026 DANARI Foundation. 모든 권리 보유.">&copy; 2026 DANARI Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for viewing whitepapers -->
+    <div id="docModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" data-en="Document Viewer" data-ko="문서 뷰어">Document Viewer</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div id="modalBody" class="modal-body markdown-content">
+                <!-- Content will be injected here -->
+                <p data-en="Loading document..." data-ko="문서를 불러오는 중입니다...">Loading document...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
